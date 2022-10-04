@@ -1,8 +1,18 @@
-n=input()
-x=0
-for i in n:
-    x=n.count(i)+x
-if(x==len(n)):
-    print('Unique Number')
+def fun(d,num):
+    while(num):
+        k=num%10
+        num=num//10
+        if k==d:
+            return True
+    return False
+n=int(input())
+s=0
+while n:
+    d=n%10
+    n=n//10
+    if fun(d,s):
+        print("Not Unique Number")
+        break
+    s=s*10+d
 else:
-    print('Not Unique Number')
+    print("Unique Number")
