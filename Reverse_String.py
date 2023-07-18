@@ -1,5 +1,5 @@
 a=input()
-s=''
-for ch in a:
-    s=ch+s
-print(s)    
+l=a.split()
+l.reverse()
+b=' '.join(l)
+print(b)
