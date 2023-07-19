@@ -1,0 +1,11 @@
+n=int(input())
+f=0
+s=1
+while(n>f):
+    temp=f
+    f=s
+    s=temp+s
+if(f==n):
+    print("True")
+else:
+    print("False")
