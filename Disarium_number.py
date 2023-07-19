@@ -1,0 +1,19 @@
+import math
+n=int(input())
+s1=n
+s=0
+rev=0
+while(n>0):
+    r=n%10
+    rev=rev*10+r
+    n=n//10
+i=1    
+while(rev>0):
+    r=rev%10
+    s=s+pow(r,i)
+    rev=rev//10
+    i=i+1
+if(s==s1):
+    print("True")
+else:
+    print("False")
