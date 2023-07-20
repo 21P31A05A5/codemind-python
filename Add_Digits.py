@@ -1,1 +1,3 @@
-print((int(input()))%9)
+n=int(input())
+r=n%9
+print(r)
