@@ -1,9 +1,9 @@
 n=int(input())
+a=list(map(int,input().split()))
 odd=0
-a=list(map(int,input().strip().split()))
-for i in range(n):
+for i in range(0,n):
     if(a[i]%2!=0):
-        odd+=1
+        odd=odd+1
 if(odd<=2):
     print("YES")
 else:
